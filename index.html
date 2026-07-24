@@ -25,13 +25,39 @@
       </p>
 
       <div class="type-grid">
-        <span>💰 投資家</span>
-        <span>🏦 貯蓄家</span>
-        <span>🎯 計画家</span>
-        <span>🎉 エンジョイ</span>
-        <span>⚡ チャレンジャー</span>
-        <span>💎 バランス</span>
-      </div>
+        <div class="type-grid">
+
+  <div class="type-item">
+    <img src="investor.png" alt="投資家">
+    <span>💰 投資家</span>
+  </div>
+
+  <div class="type-item">
+    <img src="saver.png" alt="貯蓄家">
+    <span>🏦 貯蓄家</span>
+  </div>
+
+  <div class="type-item">
+    <img src="planner.png" alt="計画家">
+    <span>🎯 計画家</span>
+  </div>
+
+  <div class="type-item">
+    <img src="enjoyer.png" alt="エンジョイ">
+    <span>🎉 エンジョイ</span>
+  </div>
+
+  <div class="type-item">
+    <img src="challenger.png" alt="チャレンジャー">
+    <span>⚡ チャレンジャー</span>
+  </div>
+
+  <div class="type-item">
+    <img src="balance.png" alt="バランス">
+    <span>💎 バランス</span>
+  </div>
+
+</div>
 
       <!-- 支社名・名前の入力欄 -->
       <div id="user-info">
@@ -120,3 +146,28 @@
 
 </body>
 </html>
+.type-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin:25px 0;
+}
+
+.type-item{
+    text-align:center;
+}
+
+.type-item img{
+    width:95px;
+    height:95px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+}
+
+.type-item span{
+    display:block;
+    margin-top:8px;
+    font-weight:bold;
+    font-size:16px;
+}
