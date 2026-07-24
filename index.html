@@ -3,63 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>6つのMoneyタイプ診断</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
   <main class="container">
+
+    <!-- 最初の画面 -->
     <section class="card" id="start-screen">
+
       <p class="eyebrow">MONEY TYPE CHECK</p>
+
       <h1>6つのMoneyタイプ診断</h1>
-      <p class="lead">18の質問に答えると、あなたのお金との付き合い方が分かります。</p>
+
+      <p class="lead">
+        18の質問に答えると、あなたのお金との付き合い方が分かります。
+      </p>
+
       <div class="type-grid">
-        <span>💰 投資家</span><span>🏦 貯蓄家</span><span>🎯 計画家</span>
-        <span>🎉 エンジョイ</span><span>⚡ チャレンジャー</span><span>💎 バランス</span>
+        <span>💰 投資家</span>
+        <span>🏦 貯蓄家</span>
+        <span>🎯 計画家</span>
+        <span>🎉 エンジョイ</span>
+        <span>⚡ チャレンジャー</span>
+        <span>💎 バランス</span>
       </div>
-     <div id="user-info">
-  <label for="branch">支社名</label>
-  <input
-    type="text"
-    id="branch"
-    placeholder="例：大阪支社"
-  >
 
-  <label for="username">お名前</label>
-  <input
-    type="text"
-    id="username"
-    placeholder="例：山田 花子"
-  >
+      <!-- 支社名・名前の入力欄 -->
+      <div id="user-info">
 
-  <button id="startBtn">診断を始める</button>
-</div> 
+        <label for="branch">支社名</label>
+
+        <input
+          type="text"
+          id="branch"
+          placeholder="例：大阪支社"
+        />
+
+        <label for="username">お名前</label>
+
+        <input
+          type="text"
+          id="username"
+          placeholder="例：山田 花子"
+        />
+
+        <button id="start-btn">
+          診断を始める
+        </button>
+
+      </div>
+
     </section>
 
+
+    <!-- 質問画面 -->
     <section class="card hidden" id="quiz-screen">
+
       <div class="progress-row">
+
         <span id="progress-text"></span>
-        <div class="progress"><div id="progress-bar"></div></div>
+
+        <div class="progress">
+          <div id="progress-bar"></div>
+        </div>
+
       </div>
+
       <h2 id="question-text"></h2>
+
       <div id="choices" class="choices"></div>
-      <button class="secondary" id="back-btn">前の質問へ</button>
+
+      <button class="secondary" id="back-btn">
+        前の質問へ
+      </button>
+
     </section>
 
+
+    <!-- 結果画面 -->
     <section class="card hidden" id="result-screen">
+
       <p class="eyebrow">YOUR MONEY TYPE</p>
+
       <div id="result-icon" class="result-icon"></div>
+
       <h2 id="result-title"></h2>
+
       <p id="result-summary" class="lead"></p>
+
       <div id="score-list" class="score-list"></div>
+
       <div class="result-box">
+
         <h3>あなたへのアドバイス</h3>
+
         <p id="result-advice"></p>
+
       </div>
-      <button id="retry-btn">もう一度診断する</button>
+
+      <button id="retry-btn">
+        もう一度診断する
+      </button>
+
     </section>
+
   </main>
+
 
   <script src="questions.js"></script>
   <script src="app.js"></script>
+
 </body>
 </html>
